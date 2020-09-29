@@ -14,11 +14,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <merges target="cordova.plugins.firebase.analytics" />
     </js-module>
 
-    <engines>
+<!--     <engines>
         <engine name="cordova" version=">=9.0.0"/>
         <engine name="cordova-android" version=">=8.0.0"/>
         <engine name="cordova-ios" version=">=6.0.0"/>
-    </engines>
+    </engines> -->
 
     <preference name="ANALYTICS_COLLECTION_ENABLED" default="true" />
     <preference name="AUTOMATIC_SCREEN_REPORTING_ENABLED" default="true" />
@@ -71,7 +71,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <uses-permission android:name="android.permission.INTERNET" />
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <config-file target="AndroidManifest.xml" parent="application">
             <meta-data android:name="firebase_analytics_collection_enabled" android:value="$ANALYTICS_COLLECTION_ENABLED" />
             <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="$AUTOMATIC_SCREEN_REPORTING_ENABLED" />
         </config-file>
