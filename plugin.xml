@@ -41,7 +41,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <string>$ANALYTICS_COLLECTION_ENABLED</string>
         </config-file>
         <config-file target="*-Info.plist" parent="FirebaseAutomaticScreenReportingEnabled">
-            <string>$AUTOMATIC_SCREEN_REPORTING_ENABLED</string>
+            <false/>
         </config-file>
 
         <header-file src="src/ios/FirebaseAnalyticsPlugin.h" />
@@ -78,7 +78,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         <config-file target="AndroidManifest.xml" parent="application">
             <meta-data android:name="firebase_analytics_collection_enabled" android:value="$ANALYTICS_COLLECTION_ENABLED" />
-            <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="$AUTOMATIC_SCREEN_REPORTING_ENABLED" />
+            <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false" />
         </config-file>
 
         <dependency id="cordova-support-android-plugin" version="~1.0.0"/>
