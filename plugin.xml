@@ -48,6 +48,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/ios/FirebaseAnalyticsPlugin.m" />
 
         <podspec>
+            <pods use-frameworks="true"/>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
